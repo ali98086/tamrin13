@@ -1,0 +1,604 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+	<meta name="author" content="alish" />
+
+	<title>Untitled 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    
+    <style>
+    
+    body{
+
+        padding: 0%;
+        margin: 0%;
+        box-sizing: content-box;
+
+    }
+
+
+    .main{
+        
+        width: 100%;
+        height: 1000px;
+        background-color: rgb(0,0,150,0.1);
+        
+    }
+    
+    .header{
+        
+        width: 100%;
+        height: 100px;
+        background-color: white;
+        position: sticky;
+        top: 0;
+    }
+    
+    .header i{
+        
+        position: absolute;
+        top: 50px;
+        right: 54px;
+        
+    }
+    
+    .header button{
+        
+        width: 100px;
+        height: 40px;
+        background-color: green;
+	    font-weight: bold;
+        color: white;
+        border-radius: 20px;
+        position: absolute;
+        top: 40px;
+        right: 130px;
+ 
+    }
+    
+    .header b{
+        
+        position: absolute;
+        top: 20px;
+        right: 50%;
+ 
+    }
+    
+    .contents{
+        
+        width: 550px;
+        height: 450px;
+        background-color: white;
+
+        margin-right: 8%;
+        display: inline-block;
+        border-radius: 5px;
+        box-shadow: 1px 1px 6px rgb(0,0,150,0.2);
+    }
+    
+    .titr{
+        
+        width: 100%;
+        margin-right: 20px;
+        font-weight: bold;
+        font-size: large;
+        
+        
+    }
+        
+    .titr hr{
+        
+        width: 91%;
+        border-color: #b8b8b8;
+        margin-left:50px ;
+        
+        
+    }
+
+    .content-divs{
+
+        width: 100%;
+        height: 460px;
+        margin-top: 6%;
+        /* border-style: solid ; */
+        display: inline-block;
+
+    }
+    
+    .content-divs .darkhast-bardasht{
+        
+        width: 100%;
+        height: 380px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    
+    .content-divs .darkhast{
+        
+        width: 91%;
+        height: 75px;
+        margin-right: 20px;
+
+        
+    }
+    
+    .content-divs .darkhast hr{
+        
+        border-color: #f0f1f2;
+        
+    }
+    
+    /* .content-divs .darkhast img{
+        
+        
+        
+                       
+    } */
+    
+    .content-divs .darkhast p{
+        
+        margin-right: 15px;
+
+
+        
+    }
+    
+    .content-divs .tarakonesh{
+        
+        width: 100%;
+        height: 380px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        
+    }
+    
+    
+    .content-divs .tarakonesh-divs{
+        
+        width: 91%;
+        height: 76px;
+        margin-top: 2px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border-bottom-color: black;
+        box-shadow: 1px 0px 17px rgb(0,0,150,26%);
+        display: -webkit-inline-box;
+
+    }
+    
+    .blogs{
+        
+        width: 90%;
+        height: 170px;
+        margin-right: 5.5%
+        
+        
+    }
+    
+    .blogs-kadr{
+        
+        width: 31.9%;
+        height: 170px;
+        background-color: white;
+        display: inline-block;
+        border-radius: 8px;
+        box-shadow: 1px 1px 6px rgb(0,0,150,0.2);
+    }
+    
+    .blogs-pic{
+        
+        width: 50%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        display: inline-block;
+    }
+    
+    .blogs p{
+        
+        width: 80%;
+        height: 85px;
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 20px;
+
+    }
+
+    .blogs #p2{
+	
+	width: 80%;
+	height: 35px;
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 20px;
+	margin-bottom: 0px;
+	position: relative;
+	top: 10px;
+
+	}   
+    
+    .blogs button{
+        
+        width: 20%;
+        height: 30px;
+        position: relative;
+        right: -10px;
+        top: 10px;
+    }
+    
+    
+    .side-kadr{
+        
+        width: 30px;
+        height: 55px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #f5f6f7;
+        box-shadow: 1px 1px 6px rgb(0,0,150,0.2) ;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        position: absolute;
+        top: 400px;
+        left: 8px;
+        
+    }
+    
+    #active{
+        
+        
+        width: 15%;
+        height: 12px;
+        position: relative;
+        right: -10px;
+        top: 10px;
+        text-align: center;
+        font-weight: bold;
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    </style>
+    
+    
+</head>
+
+<body dir="rtl">
+
+
+<div class="main">
+
+
+<div class="header">
+
+<i style="color: #949494;" class="fa fa-reorder"></i>
+<button>رمز ارزها</button>
+<b>LOGO</b>
+<i style="position: absolute; left: 220px;" class="material-icons">zoom_out_map</i>
+<p style="position: absolute; left: 65px; top: 36px; font-size: 15px;">ارشد Profile Picture</p>
+
+
+</div>
+
+<div class="content-divs">
+
+<div class="contents">
+
+<div class="titr">
+<p>درخواست های برداشت</p>
+<hr />
+
+</div>
+
+
+<div class="darkhast-bardasht">
+
+<div class="darkhast">
+
+<div style="display: inline-block;"><img style="border-radius: 50%;" src="./person_1.jpg" width="45px" height="50px"/>
+
+<div style="display: inline-block;" >
+<p style="font-size: 14px; margin-left: 150px; float: left;">زهرا سادات محمدی<br /><b style="font-size: 12px; color: #929496;"> 6,000,000 تومان | 1400/06/13 11:40</b></p></div>
+
+</div>
+<hr/>
+</div>
+
+
+<div class="darkhast">
+
+<div style="display: inline-block;"><img style="border-radius: 50%;" src="./person_1.jpg" width="45px" height="50px"/>
+
+<div style="display: inline-block;" >
+<p style="font-size: 14px; margin-left: 150px; float: left;">زهرا سادات محمدی<br /><b style="font-size: 12px; color: #929496;"> 6,000,000 تومان | 1400/06/13 11:40</b></p></div>
+
+</div>
+<hr />
+</div>
+
+
+
+<div class="darkhast">
+
+<div style="display: inline-block;"><img style="border-radius: 50%;" src="./person_1.jpg" width="45px" height="50px"/>
+
+<div style="display: inline-block;" >
+<p style="font-size: 14px; margin-left: 150px; float: left;">زهرا سادات محمدی<br /><b style="font-size: 12px; color: #929496;"> 6,000,000 تومان | 1400/06/13 11:40</b></p></div>
+
+</div>
+<hr />
+</div>
+
+<div class="darkhast">
+
+<div style="display: inline-block;"><img style="border-radius: 50%;" src="./person_1.jpg" width="45px" height="50px"/>
+
+<div style="display: inline-block;" >
+<p style="font-size: 14px; margin-left: 150px; float: left;">زهرا سادات محمدی<br /><b style="font-size: 12px; color: #929496;"> 6,000,000 تومان | 1400/06/13 11:40</b></p></div>
+
+</div>
+<hr />
+</div>
+
+<div class="darkhast">
+
+<div style="display: inline-block;"><img style="border-radius: 50%;" src="./person_1.jpg" width="45px" height="50px"/>
+
+<div style="display: inline-block;" >
+<p style="font-size: 14px; margin-left: 150px; float: left;">زهرا سادات محمدی<br /><b style="font-size: 12px; color: #929496;"> 6,000,000 تومان | 1400/06/13 11:40</b></p></div>
+
+</div>
+<hr />
+</div>
+
+<div class="darkhast">
+
+<div style="display: inline-block;"><img style="border-radius: 50%;" src="./person_1.jpg" width="45px" height="50px"/>
+
+<div style="display: inline-block;" >
+<p style="font-size: 14px; margin-left: 150px; float: left;">زهرا سادات محمدی<br /><b style="font-size: 12px; color: #929496;"> 6,000,000 تومان | 1400/06/13 11:40</b></p></div>
+
+</div>
+<hr />
+</div>
+
+<div class="darkhast">
+
+<div style="display: inline-block;"><img style="border-radius: 50%;" src="./person_1.jpg" width="45px" height="50px"/>
+
+<div style="display: inline-block;" >
+<p style="font-size: 14px; margin-left: 150px; float: left;">زهرا سادات محمدی<br /><b style="font-size: 12px; color: #929496;"> 6,000,000 تومان | 1400/06/13 11:40</b></p></div>
+
+</div>
+<hr />
+</div>
+
+<div class="darkhast">
+
+<div style="display: inline-block;"><img style="border-radius: 50%;" src="./person_1.jpg" width="45px" height="50px"/>
+
+<div style="display: inline-block;" >
+<p style="font-size: 14px; margin-left: 150px; float: left;">زهرا سادات محمدی<br /><b style="font-size: 12px; color: #929496;"> 6,000,000 تومان | 1400/06/13 11:40</b></p></div>
+
+</div>
+<hr />
+</div>
+
+<div class="darkhast">
+
+<div style="display: inline-block;"><img style="border-radius: 50%;" src="./person_1.jpg" width="45px" height="50px"/>
+
+<div style="display: inline-block;" >
+<p style="font-size: 14px; margin-left: 150px; float: left;">زهرا سادات محمدی<br /><b style="font-size: 12px; color: #929496;"> 6,000,000 تومان | 1400/06/13 11:40</b></p></div>
+
+</div>
+<hr />
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+<div style="margin-right: 56px;" class="contents">
+
+<div class="titr">
+<p>لیست تراکنش های اخیر</p>
+<hr />
+
+</div>
+
+<div class="tarakonesh">
+
+<div class="tarakonesh-divs">
+
+<div style="display: inline-block;">
+
+<img style="margin-bottom: 15px; margin-right: 20px;" src="./tik.png" width="20px" height="20px"/>
+<img style="margin-top: 15px; border-radius: 50%;" src="./person_2.jpg" width="45px" height="50px"/>
+
+
+</div>
+
+<div style="float: left; margin-top: 20px;">
+<div style="display: inline-block ; margin-right: 30px; margin-left: 40px;"><p style="font-size: 12px; font-weight: bold;">سید الیاس مصباح</p></div>
+
+<div style="display: inline-block ;margin-right: 40px; margin-left: 80px;">
+<button style="font-size: 12px; border-radius: 40px; background-color: #282f63; color: white; padding:5px;">تبدیل تتر- بیت کوین مصباح</button></div>
+
+
+</div>
+</div>
+
+<div class="tarakonesh-divs">
+
+<div style="display: inline-block;">
+
+<img style="margin-bottom: 15px; margin-right: 20px;" src="./tik.png" width="20px" height="20px"/>
+<img style="margin-top: 15px; border-radius: 50%;" src="./person_2.jpg" width="45px" height="50px"/>
+
+
+</div>
+
+<div style="float: left; margin-top: 20px;">
+<div style="display: inline-block ; margin-right: 30px; margin-left: 40px;"><p style="font-size: 12px; font-weight: bold;">سید الیاس مصباح</p></div>
+
+<div style="display: inline-block ;margin-right: 40px; margin-left: 80px;">
+<button style="font-size: 12px; border-radius: 40px; background-color: #282f63; color: white; padding:5px;">واریز تتر-بیت کوین مصباح</button></div>
+
+
+</div>
+</div>
+
+
+<div class="tarakonesh-divs">
+
+<div style="display: inline-block;">
+
+<img style="margin-bottom: 15px; margin-right: 20px;" src="./tik.png" width="20px" height="20px"/>
+<img style="margin-top: 15px; border-radius: 50%;" src="./person_2.jpg" width="45px" height="50px"/>
+
+
+</div>
+
+<div style="float: left; margin-top: 20px;">
+<div style="display: inline-block ; margin-right: 30px; margin-left: 40px;"><p style="font-size: 12px; font-weight: bold;">سید الیاس مصباح</p></div>
+
+<div style="display: inline-block ;margin-right: 40px; margin-left: 80px;">
+<button style="font-size: 12px; border-radius: 40px; background-color: #282f63; color: white; padding:5px;">واریز تتر-بیت کوین مصباح</button></div>
+
+
+</div>
+</div>
+
+
+
+<div class="tarakonesh-divs">
+
+<div style="display: inline-block;">
+
+<img style="margin-bottom: 15px; margin-right: 20px;" src="./tik.png" width="20px" height="20px"/>
+<img style="margin-top: 15px; border-radius: 50%;" src="./person_2.jpg" width="45px" height="50px"/>
+
+
+</div>
+
+<div style="float: left; margin-top: 20px;">
+<div style="display: inline-block ; margin-right: 30px; margin-left: 40px;"><p style="font-size: 12px; font-weight: bold;">سید الیاس مصباح</p></div>
+
+<div style="display: inline-block ;margin-right: 40px; margin-left: 80px;">
+<button style="font-size: 12px; border-radius: 40px; background-color: #282f63; color: white; padding:5px;">واریز تتر-بیت کوین مصباح</button></div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+</div>
+
+<p style="margin-top: 4%; margin-bottom: 20px ; margin-right: 60px; font-weight: bold;">آخرین بلاگ ها</p>
+
+<div class="blogs">
+
+<div class="blogs-kadr">
+
+<div class="blogs-pic " style="background-image: url('./bitcoin1.jpg');">
+
+<div id="active" style="font-size: 12px; border-radius: 40px; background-color: #282f63; color: white; padding:5px;">فعال</div>
+<!-- <button style="font-size: 12px; border-radius: 40px; background-color: #282f63; color: white; padding:5px;">فعال</button>-->
+
+</div>
+
+<div style="width: 45%; height: 50px; float: left; margin-top: 10px;">
+<p>blog</p> 
+<p id="p2" style="font-size: small; color: #929496;"> 1400/06/13 11:40</p>
+
+</div>
+
+</div>
+
+
+<div style="margin-right: 20px;" class="blogs-kadr">
+
+<div class="blogs-pic" style="background-image: url('./bitcoin2.jpg');">
+
+<div id="active" style="font-size: 12px; border-radius: 40px; background-color: #282f63; color: white; padding:5px;">فعال</div>
+<!-- <button style="font-size: 12px; border-radius: 40px; background-color: #282f63; color: white; padding:5px;">فعال</button>-->
+
+</div>
+
+<div style="width: 45%; height: 50px; margin-top: 10px; float: left;">
+
+<p>تبهکاران دارک وب ابزاری ساختند برای بررسی بیت کوین کثیف</p> 
+
+<p id="p2" style="font-size: small; color: #929496;"> 1400/06/13 11:40</p>
+
+</div>
+</div>
+
+<div style="margin-right: 20px;" class="blogs-kadr">
+
+<div class="blogs-pic" style="background-image: url('./bitcoin3.jpg');">
+
+<div id="active" style="font-size: 12px; border-radius: 40px; background-color: #282f63; color: white; padding:5px;">فعال</div>
+<!-- <button style="font-size: 12px; border-radius: 40px; background-color: #282f63; color: white; padding:5px;">فعال</button> -->
+
+</div>
+
+<div style="width: 45%; height: 50px;float: left; margin-top: 10px;">
+
+<p>ارز دیجیتال چیست؟</p> 
+
+<p id="p2" style="font-size: small; color: #929496;"> 1400/06/13 11:40</p>
+
+</div>
+</div>
+
+</div>
+
+<div class="side-kadr">
+
+<img style="position: absolute; top: 24%; left: 10%;" src="./magicvand.jpg" width="25px" height="30px"/>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
